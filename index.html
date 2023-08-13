@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Таблиця 10x10</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <script>
+            let count = 1;
+            for (let i = 1; i <= 10; i++) {
+                document.write("<tr>");
+                for (let j = 1; j <= 10; j++) {
+                    document.write("<td>" + count + "</td>");
+                    count++;
+                }
+                document.write("</tr>");
+            }
+        </script>
+    </table>
+</body>
+
+</html>
